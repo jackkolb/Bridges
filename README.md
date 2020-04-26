@@ -30,7 +30,7 @@ joints.append(JOINT_NAME)
 
 For further reference you can see the examples in main.py.
 
-Once the structured is defined, simply run the main.py script and it will calculate the force in each joint. Positive results are compression, negative results are tension. Output for the example structure, a square pyramid, is shown below:
+Once the structured is defined, simply run the main.py script and it will calculate the force in each joint. Positive results indicate tension, negative results indicate compression. Output for the example structure, a square pyramid, is shown below:
 ```
 $> python3 main.py
 -- The Amazing ME 174 Truss Solver! --
