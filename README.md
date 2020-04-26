@@ -30,7 +30,26 @@ joints.append(JOINT_NAME)
 
 For further reference you can see the examples in main.py.
 
-Once the structured is defined, simply run the main.py script and it will calculate the force in each joint. Positive results are compression, negative results are tension.
+Once the structured is defined, simply run the main.py script and it will calculate the force in each joint. Positive results are compression, negative results are tension. Output for the example structure, a square pyramid, is shown below:
 ```
-python3 main.py
+$> python3 main.py
+-- The Amazing ME 174 Truss Solver! --
+There are 12 valid force balance equations
+Generating linked equation trees:
+  Calculating for: AB
+  Calculating for: AD
+  Calculating for: BC
+  Calculating for: CD
+  16 unique equation sets found
+  There are 2 fully defined equation sets
+
+Results: 
+Force in beam AB : 81.75
+Force in beam AD : 81.75
+Force in beam AE : -271.13408
+Force in beam BC : 81.75
+Force in beam BE : -271.13408
+Force in beam CD : 81.75
+Force in beam CE : -271.13408
+Force in beam DE : -271.13408
 ```
