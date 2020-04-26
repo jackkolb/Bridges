@@ -4,7 +4,7 @@ Bridges calculates the geometric static loads in a 3D rigid structure given the 
 
 It was designed to aid our team in UC Riverside's Machine Design (ME174) course project. We had to design a plastic straw bridge, with our grade dependent on how close our predicted failure load was to the actual failure load of the bridge. We used this tool to determine the maximum load of our bridge, and were able to achieve a ~2% error
 
-This tool was not intended for general use, but may help others either looking to design a 3D truss solver or use one for their own projects. This solver is not optimized so be wary when using trusses with over ~20 members.
+This tool was not intended for general use, but may help others either looking to design a 3D truss solver or use one for their own projects. This solver is not very well optimized so be wary when using trusses with over ~20 members.
 
 To use the solver, open main.py and look at the section with Joint.Joint, add_connection, add_force, and joints.append.
 
@@ -15,7 +15,7 @@ JOINT_NAME = Joint.Joint(X_LOCATION, Y_LOCATION, Z_LOCATION, name="JOINT NAME")
 
 For every member in your truss (connection between two joints), add a connection:
 ```
-add_connection(JOINT_A, JOINT_B)  # note that you only need to add one connection two joints
+add_connection(JOINT_A, JOINT_B)  # note that you only need to add one connection per two joints
 ```
 
 Add each external force (including reaction forces):
